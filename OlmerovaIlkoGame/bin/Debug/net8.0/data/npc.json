@@ -1,0 +1,86 @@
+[
+  {
+    "tagName": "sluha",
+    "name": "Sluha",
+    "health": 100,
+    "isFriendly": true,
+    "weaponTag": null,
+    "givesItemTag": null,
+    "requiredItemTag": null,
+    "dialogs": {
+      "default": "Sluha se ukloní: Vítejte! Někde tady v hale leží starý pergamen. Možná by se vám hodil… světlo vede cestu do temnoty.",
+      "already_given": "Sluha se ukloní: Přeji příjemný pobyt. Ten pergamen leží někde na zemi."
+    }
+  },
+  {
+    "tagName": "strazny",
+    "name": "Strážný",
+    "health": 100,
+    "isFriendly": true,
+    "weaponTag": null,
+    "givesItemTag": "pochoden",
+    "requiredItemTag": "pergamen",
+    "dialogs": {
+      "default": "Strážný se zamračí: Co tady chceš? Nemám čas na řeči.",
+      "has_item": "Strážný si prohlédne pergamen: Takže víš o tmě. Tady máš pochodeň — bez ní do sklepení nechoď.",
+      "already_given": "Strážný pokývá: Tu pochodeň už máš. Opatruj se."
+    }
+  },
+  {
+    "tagName": "kral",
+    "name": "Král",
+    "health": 100,
+    "isFriendly": true,
+    "weaponTag": null,
+    "givesItemTag": "mec",
+    "requiredItemTag": "prsten",
+    "dialogs": {
+      "default": "Král tě přivítá: Prosím, pomoz mi najít korunu. Mimochodem — neviděl jsi můj stříbrný prsten? Ztratil jsem ho někde tady v sále.",
+      "has_item": "Král se rozzáří: Můj prsten! Děkuji! Vezmi si tento meč jako odměnu — zloděj může být nebezpečný.",
+      "already_given": "Král přikývne: Opatruj se. Ten zloděj není obyčejný."
+    }
+  },
+  {
+    "tagName": "uklidecka",
+    "name": "Uklízečka",
+    "health": 100,
+    "isFriendly": true,
+    "weaponTag": null,
+    "givesItemTag": null,
+    "requiredItemTag": "stit",
+    "dialogs": {
+      "default": "Uklízečka se otočí: Uf, takový nepořádek! Támhle leží starý štít — podej mi ho, ať ho uklidím.",
+      "has_item": "Uklízečka vezme štít: Díky! Hele — klíč co hledáš? Viděla jsem ho v knihovně, někde na horní polici.",
+      "already_given": "Uklízečka mete podlahu: Klíč je v knihovně, říkala jsem přece."
+    }
+  },
+  {
+    "tagName": "knihovnik",
+    "name": "Knihovník",
+    "health": 100,
+    "isFriendly": true,
+    "weaponTag": null,
+    "givesItemTag": "klic",
+    "requiredItemTag": "kniha",
+    "dialogs": {
+      "default": "Knihovník se zamračí: Někdo mi tu ztratil mou oblíbenou knihu. Bez ní ti nepomůžu.",
+      "has_item": "Knihovník se rozsvítí: Moje kniha! Kde jsi ji našel? Tady je klíč od tajné místnosti — jako poděkování.",
+      "already_given": "Knihovník listuje knihou: To byl dobrý obchod. Opatruj se tam dole."
+    }
+  },
+  {
+    "tagName": "zlodej",
+    "name": "Zloděj",
+    "health": 80,
+    "isFriendly": false,
+    "weaponTag": null,
+    "givesItemTag": "koruna",
+    "requiredItemTag": "mec",
+    "dialogs": {
+      "default": "Zloděj: Tak tys mě našel… ale korunu ti nedám! A bez zbraně mě stejně neporazíš. Hahaha!",
+      "has_item": "Zloděj spatří meč: Počkej… to je královský meč! Tak tohle bude boj!",
+      "defeat": "Zloděj padne na kolena: Dobře, dobře… ber si ji. Stejně už nemám kam utéct.",
+      "win": "Zloděj si klekne nad tvé mrtvé tělo: Hahaha, ty sis myslel, že mě porazíš. NIKDY :DDDDDDDDD"
+    }
+  }
+]

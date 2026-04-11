@@ -15,3 +15,7 @@ C:\Users\ilkom\OneDrive\Документы\PV\ServerHra\OlmerovaIlkoGame\obj\Deb
 C:\Users\ilkom\OneDrive\Документы\PV\ServerHra\OlmerovaIlkoGame\obj\Debug\net8.0\OlmerovaIlkoGame.pdb
 C:\Users\ilkom\OneDrive\Документы\PV\ServerHra\OlmerovaIlkoGame\obj\Debug\net8.0\OlmerovaIlkoGame.genruntimeconfig.cache
 C:\Users\ilkom\OneDrive\Документы\PV\ServerHra\OlmerovaIlkoGame\obj\Debug\net8.0\ref\OlmerovaIlkoGame.dll
+C:\Users\ilkom\OneDrive\Документы\PV\ServerHra\OlmerovaIlkoGame\bin\Debug\net8.0\data\npc.json
+C:\Users\ilkom\OneDrive\Документы\PV\ServerHra\OlmerovaIlkoGame\bin\Debug\net8.0\YamlDotNet.dll
+C:\Users\ilkom\OneDrive\Документы\PV\ServerHra\OlmerovaIlkoGame\obj\Debug\net8.0\OlmerovaIlkoGame.csproj.AssemblyReference.cache
+C:\Users\ilkom\OneDrive\Документы\PV\ServerHra\OlmerovaIlkoGame\obj\Debug\net8.0\Olmerova.6212977B.Up2Date

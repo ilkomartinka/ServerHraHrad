@@ -58,7 +58,7 @@
       "zapad": 3,
       "jih": 6
     },
-    "itemsInRoom": [ "klic", "kniha" ],
+    "itemsInRoom": [ "kniha" ],
     "npcsInRoom": [ "knihovnik" ],
     "isLocked": false,
     "requiredKeyTag": null
@@ -70,7 +70,7 @@
     "availableRooms": {
       "sever": 5
     },
-    "itemsInRoom": [ "koruna" ],
+    "itemsInRoom": [ ],
     "npcsInRoom": [ "zlodej" ],
     "isLocked": true,
     "requiredKeyTag": "klic"

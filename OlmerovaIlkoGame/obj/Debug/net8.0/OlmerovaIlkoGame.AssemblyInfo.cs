@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OlmerovaIlkoGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9818b1939bb79dc83bfb6f23030b81bd1cf2f44")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+878f4b538da6b6d66470d1e3761fe03369dd6e6d")]
 [assembly: System.Reflection.AssemblyProductAttribute("OlmerovaIlkoGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OlmerovaIlkoGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

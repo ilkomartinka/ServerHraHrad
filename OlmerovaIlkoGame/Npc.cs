@@ -8,7 +8,11 @@ namespace OlmerovaIlkoGame
 {
     internal class Npc : Entity
     {
+        public string Name { get; set; } = "";
         public bool IsFriendly { get; set; }
+        public string? GivesItemTag { get; set; }
+        public string? RequiredItemTag { get; set; }
+        public bool AlreadyGaveItem { get; set; } = false;
         public Item? Weapon { get; set; }
         // Dialogy: "klic" -> "text"
         // "default" -> "Nemám co říct."
@@ -18,7 +22,9 @@ namespace OlmerovaIlkoGame
         {
             if (Dialogs.TryGetValue(key, out string? text))
                 return text;
-            return "...";   // NPC mlčí
+            if (Dialogs.TryGetValue("default", out string? defaultText))
+                return defaultText;
+            return "...";
         }
     }
 }

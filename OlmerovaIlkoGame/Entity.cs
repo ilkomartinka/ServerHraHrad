@@ -2,10 +2,10 @@
 {
     internal abstract class Entity
     {
-        protected string? TagName { get; set; }
-        protected int Health { get; set; } = 100;
-        protected Inventory Inventory { get; set; } = new Inventory();
-        protected bool IsAlive => Health > 0;
+        public string? TagName { get; set; }
+        public int Health { get; set; } = 100;
+        public Inventory Inventory { get; set; } = new Inventory();
+        public bool IsAlive => Health > 0;
 
     }
 }

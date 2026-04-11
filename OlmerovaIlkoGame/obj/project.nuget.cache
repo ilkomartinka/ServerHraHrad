@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ivZtwB05K0E=",
+  "dgSpecHash": "jhd5oOuVe1w=",
   "success": true,
   "projectFilePath": "C:\\Users\\ilkom\\OneDrive\\Документы\\PV\\ServerHra\\OlmerovaIlkoGame\\OlmerovaIlkoGame.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ilkom\\.nuget\\packages\\yamldotnet\\17.0.1\\yamldotnet.17.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
