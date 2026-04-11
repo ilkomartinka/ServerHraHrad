@@ -8,7 +8,7 @@ namespace OlmerovaIlkoGame
         public Dictionary<int, Room> AllRooms { get; private set; } = new();
         public Dictionary<string, Item> AllItems { get; private set; } = new();
 
-        // ← ДОДАНО: словник всіх NPC
+      
         public Dictionary<string, Npc> AllNpcs { get; private set; } = new();
 
         private static readonly JsonSerializerOptions _jsonOptions = new()
@@ -20,8 +20,8 @@ namespace OlmerovaIlkoGame
         {
             var world = new World();
             world.LoadItems(Path.Combine(dataPath, "items.json"));
-            world.LoadNpcs(Path.Combine(dataPath, "npc.json"));   // ← ДОДАНО
-            world.LoadRooms(Path.Combine(dataPath, "rooms.json"));  // Rooms musí být poslední!
+            world.LoadNpcs(Path.Combine(dataPath, "npc.json"));   
+            world.LoadRooms(Path.Combine(dataPath, "rooms.json"));  
             return world;
         }
 
@@ -36,7 +36,7 @@ namespace OlmerovaIlkoGame
             Console.WriteLine($"Načteno {AllItems.Count} předmětů.");
         }
 
-        // ← DODÁNA celá metoda LoadNpcs
+       
         private void LoadNpcs(string path)
         {
             string json = File.ReadAllText(path);
@@ -55,7 +55,7 @@ namespace OlmerovaIlkoGame
                     Dialogs = data.Dialogs
                 };
 
-                // Přiřadíme zbraň pokud NPC ji má
+                
                 if (data.WeaponTag != null && AllItems.TryGetValue(data.WeaponTag, out Item? weapon))
                     npc.Weapon = weapon;
 
@@ -82,7 +82,7 @@ namespace OlmerovaIlkoGame
                     RequiredKeyTag = data.RequiredKeyTag
                 };
 
-                // Předměty
+                
                 foreach (string tag in data.ItemsInRoom)
                 {
                     if (AllItems.TryGetValue(tag, out Item? item))
@@ -91,7 +91,7 @@ namespace OlmerovaIlkoGame
                         Console.WriteLine($"VAROVÁNÍ: předmět '{tag}' nenalezen!");
                 }
 
-                // ← DODÁNO: NPC do místností
+               
                 foreach (string tag in data.NpcsInRoom)
                 {
                     if (AllNpcs.TryGetValue(tag, out Npc? npc))
