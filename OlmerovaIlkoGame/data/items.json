@@ -1,0 +1,74 @@
+[
+  {
+    "tagName": "pergamen",
+    "name": "Starý pergamen",
+    "description": "Zmačkaný pergamen. Píše se na něm: 'Světlo vede cestu do temnoty.'",
+    "isKey": false,
+    "isWeapon": false,
+    "attackBonus": 0
+  },
+  {
+    "tagName": "pochoden",
+    "name": "Pochodeň",
+    "description": "Dřevěná pochodeň. Osvětlí i tu nejhlubší tmu.",
+    "isKey": true,
+    "isWeapon": false,
+    "attackBonus": 0
+  },
+  {
+    "tagName": "rukavice",
+    "name": "Kožené rukavice",
+    "description": "Staré kožené rukavice. Vypadají pohodlně.",
+    "isKey": false,
+    "isWeapon": false,
+    "attackBonus": 0
+  },
+  {
+    "tagName": "mec",
+    "name": "Meč",
+    "description": "Ostrý královský meč. Cítíš jeho váhu v ruce.",
+    "isKey": false,
+    "isWeapon": true,
+    "attackBonus": 30
+  },
+  {
+    "tagName": "prsten",
+    "name": "Stříbrný prsten",
+    "description": "Elegantní prsten s královským erbem.",
+    "isKey": false,
+    "isWeapon": false,
+    "attackBonus": 0
+  },
+  {
+    "tagName": "stit",
+    "name": "Zrezivělý štít",
+    "description": "Starý štít pokrytý rzí. Ještě by mohl posloužit.",
+    "isKey": false,
+    "isWeapon": true,
+    "attackBonus": 10
+  },
+  {
+    "tagName": "klic",
+    "name": "Klíč",
+    "description": "Těžký železný klíč. K čemu asi patří?",
+    "isKey": true,
+    "isWeapon": false,
+    "attackBonus": 0
+  },
+  {
+    "tagName": "kniha",
+    "name": "Zvláštní kniha",
+    "description": "Tlustá kniha s podivnými symboly na obálce.",
+    "isKey": false,
+    "isWeapon": false,
+    "attackBonus": 0
+  },
+  {
+    "tagName": "koruna",
+    "name": "Koruna",
+    "description": "Zlatá královská koruna. Třpytí se v tmě.",
+    "isKey": false,
+    "isWeapon": false,
+    "attackBonus": 0
+  }
+]

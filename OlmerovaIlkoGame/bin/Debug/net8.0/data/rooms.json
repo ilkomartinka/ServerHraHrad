@@ -1,0 +1,78 @@
+[
+  {
+    "roomId": 1,
+    "name": "Vstupní hala",
+    "description": "Velká kamenná hala. Pochodně na stěnách osvětlují erb královského rodu.",
+    "availableRooms": {
+      "sever": 2,
+      "vychod": 3
+    },
+    "itemsInRoom": [ "pergamen" ],
+    "npcsInRoom": [ "sluha" ],
+    "isLocked": false,
+    "requiredKeyTag": null
+  },
+  {
+    "roomId": 2,
+    "name": "Strážnice",
+    "description": "Malá místnost strážných. Na stole leží různé vybavení.",
+    "availableRooms": {
+      "jih": 1
+    },
+    "itemsInRoom": [ "rukavice" ],
+    "npcsInRoom": [ "strazny" ],
+    "isLocked": false,
+    "requiredKeyTag": null
+  },
+  {
+    "roomId": 3,
+    "name": "Trůnní sál",
+    "description": "Majestátní sál s vysokými stropy. Na trůně sedí unavený král.",
+    "availableRooms": {
+      "zapad": 1,
+      "jih": 4,
+      "vychod": 5
+    },
+    "itemsInRoom": [ "prsten" ],
+    "npcsInRoom": [ "kral" ],
+    "isLocked": false,
+    "requiredKeyTag": null
+  },
+  {
+    "roomId": 4,
+    "name": "Sklepení",
+    "description": "Tmavé sklepení. Bez světla nevidíš skoro nic.",
+    "availableRooms": {
+      "sever": 3
+    },
+    "itemsInRoom": [ "stit" ],
+    "npcsInRoom": [ "uklidecka" ],
+    "isLocked": true,
+    "requiredKeyTag": "pochoden"
+  },
+  {
+    "roomId": 5,
+    "name": "Knihovna",
+    "description": "Stěny pokryté knihami od podlahy ke stropu.",
+    "availableRooms": {
+      "zapad": 3,
+      "jih": 6
+    },
+    "itemsInRoom": [ "klic", "kniha" ],
+    "npcsInRoom": [ "knihovnik" ],
+    "isLocked": false,
+    "requiredKeyTag": null
+  },
+  {
+    "roomId": 6,
+    "name": "Tajná místnost",
+    "description": "Skrytá komnata. V rohu stojí zloděj s korunou v ruce.",
+    "availableRooms": {
+      "sever": 5
+    },
+    "itemsInRoom": [ "koruna" ],
+    "npcsInRoom": [ "zlodej" ],
+    "isLocked": true,
+    "requiredKeyTag": "klic"
+  }
+]

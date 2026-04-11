@@ -11,10 +11,16 @@ namespace OlmerovaIlkoGame
         public required Room CurrentRoom { get; set; }
         public Item? CurrentItem { get; set ; }
 
-        public Player(Room currentRoom, Item? currentItem)
+        public string Name { get; set; } = "";
+        public string PasswordHash { get; set; } = "";
+        public int CurrentRoomId { get; set; } = 1;
+        public bool HasWon { get; set; } = false;
+
+        public Player(Room startRoom)
         {
-            this.CurrentRoom = currentRoom;
-            this.CurrentItem = currentItem;
+            CurrentRoom = startRoom;
+            CurrentRoomId = startRoom.RoomId;
         }
+        public bool HasItem(string tag) => Inventory.HasItem(tag);
     }
 }
