@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿// GiveCommand.cs
 namespace OlmerovaIlkoGame
 {
-    internal class GiveCommand:ICommand
+    internal class GiveCommand : ICommand
     {
-        public void execute()
+        public async Task Execute(StreamWriter writer, Player player, string argument, World world)
         {
-            Console.WriteLine("GiveCommand");
+            // Dávání předmětů NPC je řešeno v TalkToCommand
+            await writer.WriteLineAsync("Pro předání předmětu NPC použij: mluv <jméno>");
         }
     }
 }

@@ -8,7 +8,7 @@ namespace OlmerovaIlkoGame
 {
     internal class Player : Entity
     {
-        public required Room CurrentRoom { get; set; }
+        public Room CurrentRoom { get; set; }
         public Item? CurrentItem { get; set ; }
 
         public string Name { get; set; } = "";

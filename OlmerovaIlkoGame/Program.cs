@@ -2,9 +2,9 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
-            World world = World.Load("data/");
+            /*World world = World.Load("data/");
 
             // --- PŘEDMĚTY ---
             Console.WriteLine("--- PŘEDMĚTY ---");
@@ -102,6 +102,29 @@
                 Console.WriteLine("  ✅ Vše v pořádku!");
 
             Console.WriteLine("\nStiskni Enter...");
+            Console.ReadLine();*/
+     
+            
+              
+            
+        
+        static async Task Main(string[] args)
+        {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            World world = World.Load("data/");
+
+            // Vytvoříme hráče v startovní místnosti
+            Room startRoom = world.AllRooms[1];
+            Player player = new Player(startRoom) { Name = "Hráč" };
+
+            // Writer → prozatím píšeme do konzole
+            var writer = new StreamWriter(Console.OpenStandardOutput()) { AutoFlush = true };
+
+            // Spustíme hru!
+            var gameLoop = new GameLoop(world);
+            await gameLoop.Run(writer, player);
+
+            Console.WriteLine("\nKonec hry.");
             Console.ReadLine();
         }
     }

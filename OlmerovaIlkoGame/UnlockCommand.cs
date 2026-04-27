@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿// UnlockCommand.cs
 namespace OlmerovaIlkoGame
 {
-    internal class UnlockCommand: ICommand
+    internal class UnlockCommand : ICommand
     {
-        public void execute()
+        public async Task Execute(StreamWriter writer, Player player, string argument, World world)
         {
-            Console.WriteLine("UnlockCommand");
+            // Odemykání je řešeno automaticky v MoveCommand
+            await writer.WriteLineAsync("Místnosti se odemykají automaticky když máš správný předmět a jdeš do nich.");
         }
     }
 }
