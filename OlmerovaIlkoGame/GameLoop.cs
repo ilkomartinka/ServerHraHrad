@@ -24,7 +24,7 @@
             };
         }
 
-        public async Task Run(StreamWriter writer, Player player)
+        public async Task Run(StreamReader reader, StreamWriter writer, Player player)
         {
             // Zobrazíme místnost při startu
             await ShowRoom(writer, player);
@@ -33,9 +33,10 @@
             while (!player.HasWon)
             {
                 await writer.WriteAsync("\n> ");
+                await writer.FlushAsync();
 
                 // Čteme příkaz — pro teď z Console, později z TCP
-                string? input = Console.ReadLine();
+                string? input = await reader.ReadLineAsync();
                 if (input == null) break;
 
                 input = input.Trim().ToLower();
@@ -69,32 +70,32 @@
                 }
             }
         }
-     
-            // Zobrazí popis aktuální místnosti
-            public static async Task ShowRoom(StreamWriter writer, Player player)
+
+        // Zobrazí popis aktuální místnosti
+        public static async Task ShowRoom(StreamWriter writer, Player player)
+        {
+            Room room = player.CurrentRoom;
+            await writer.WriteLineAsync($"\n=== {room.Name.ToUpper()} ===");
+            await writer.WriteLineAsync(room.Description);
+
+            await writer.WriteLineAsync("\nVýchody: " + string.Join(", ", room.AvailableRooms.Keys));
+
+            if (room.ItemsInRoom.Count > 0)
             {
-                Room room = player.CurrentRoom;
-                await writer.WriteLineAsync($"\n=== {room.Name.ToUpper()} ===");
-                await writer.WriteLineAsync(room.Description);
-
-                await writer.WriteLineAsync("\nVýchody: " + string.Join(", ", room.AvailableRooms.Keys));
-
-                if (room.ItemsInRoom.Count > 0)
-                {
-                    string items = string.Join(", ", room.ItemsInRoom.Select(i => i.Name));
-                    await writer.WriteLineAsync("Předměty na zemi: " + items);
-                }
-
-                if (room.NpcsInRoom.Count > 0)
-                {
-                    string npcs = string.Join(", ", room.NpcsInRoom.Select(n => n.Name));
-                    await writer.WriteLineAsync("Osoby v místnosti: " + npcs);
-                }
-
-                // ← ДОДАНО: nápověda příkazů pod každou místností
-                await writer.WriteLineAsync("\n--- příkazy ---");
-                await writer.WriteLineAsync("jdi <směr> | vezmi <předmět> | poloz <předmět>");
-                await writer.WriteLineAsync("mluv <jméno> | pouzij <předmět> | inventar | pomoc");
+                string items = string.Join(", ", room.ItemsInRoom.Select(i => i.Name));
+                await writer.WriteLineAsync("Předměty na zemi: " + items);
             }
+
+            if (room.NpcsInRoom.Count > 0)
+            {
+                string npcs = string.Join(", ", room.NpcsInRoom.Select(n => n.Name));
+                await writer.WriteLineAsync("Osoby v místnosti: " + npcs);
+            }
+
+            // ← ДОДАНО: nápověda příkazů pod každou místností
+            await writer.WriteLineAsync("\n--- příkazy ---");
+            await writer.WriteLineAsync("jdi <směr> | vezmi <předmět> | poloz <předmět>");
+            await writer.WriteLineAsync("mluv <jméno> | pouzij <předmět> | inventar | pomoc");
         }
     }
+}

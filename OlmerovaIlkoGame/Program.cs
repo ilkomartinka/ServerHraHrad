@@ -110,7 +110,16 @@
         
         static async Task Main(string[] args)
         {
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            int port = 8888;
+
+            Server server = new Server(port);
+
+        }
+    }
+}
+
+/*
+ * Console.OutputEncoding = System.Text.Encoding.UTF8;
             World world = World.Load("data/");
 
             // Vytvoříme hráče v startovní místnosti
@@ -125,7 +134,4 @@
             await gameLoop.Run(writer, player);
 
             Console.WriteLine("\nKonec hry.");
-            Console.ReadLine();
-        }
-    }
-}
+            Console.ReadLine();*/
