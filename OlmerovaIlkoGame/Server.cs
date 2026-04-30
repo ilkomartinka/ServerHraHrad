@@ -11,9 +11,12 @@ namespace OlmerovaIlkoGame
     {
         private TcpListener myServer;
         private bool isRunning;
+        private int port;
 
-        public Server(int port)
+        public Server(ServerConfig serverConfig)
         {
+            ServerConfig serverCon = serverConfig.LoadPort("data/settings.json");
+            port = serverCon.Port;
             myServer = new TcpListener(System.Net.IPAddress.Any, port);
             myServer.Start();
             isRunning = true;
@@ -42,12 +45,10 @@ namespace OlmerovaIlkoGame
             try
             {
                 World world = World.Load("data/");
-
-                // Vytvoříme hráče v startovní místnosti
                 Room startRoom = world.AllRooms[1];
+
                 Player player = new Player(startRoom) { Name = "Hráč" };
 
-                // Spustíme hru!
                 GameLoop gameLoop = new GameLoop(world);
                 gameLoop.Run(reader, writer, player).Wait();
 

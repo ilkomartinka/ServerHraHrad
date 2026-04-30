@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4t2vnogTFZo=",
+  "dgSpecHash": "vRI3auhNM7A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\betyo\\Source\\Repos\\OlmerovaIlkoGame\\OlmerovaIlkoGame\\OlmerovaIlkoGame.csproj",
+  "projectFilePath": "C:\\Users\\olmerova\\Source\\Repos\\OlmerovaIlkoGame\\OlmerovaIlkoGame\\OlmerovaIlkoGame.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\betyo\\.nuget\\packages\\yamldotnet\\17.0.1\\yamldotnet.17.0.1.nupkg.sha512"
+    "C:\\Users\\olmerova\\.nuget\\packages\\yamldotnet\\17.0.1\\yamldotnet.17.0.1.nupkg.sha512"
   ],
   "logs": []
 }

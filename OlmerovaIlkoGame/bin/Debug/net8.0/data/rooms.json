@@ -46,7 +46,7 @@
       "sever": 3
     },
     "itemsInRoom": [ "stit" ],
-    "npcsInRoom": [ "uklidecka" ],
+    "npcsInRoom": [ "uklizecka" ],
     "isLocked": true,
     "requiredKeyTag": "pochoden"
   },

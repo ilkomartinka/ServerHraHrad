@@ -21,7 +21,7 @@ namespace OlmerovaIlkoGame
             var world = new World();
             world.LoadItems(Path.Combine(dataPath, "items.json"));
             world.LoadNpcs(Path.Combine(dataPath, "npc.json"));   
-            world.LoadRooms(Path.Combine(dataPath, "rooms.json"));  
+            world.LoadRooms(Path.Combine(dataPath, "rooms.json"));
             return world;
         }
 

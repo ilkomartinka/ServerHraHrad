@@ -48,23 +48,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\betyo\\.nuget\\packages\\": {},
+    "C:\\Users\\olmerova\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\betyo\\Source\\Repos\\OlmerovaIlkoGame\\OlmerovaIlkoGame\\OlmerovaIlkoGame.csproj",
+      "projectUniqueName": "C:\\Users\\olmerova\\Source\\Repos\\OlmerovaIlkoGame\\OlmerovaIlkoGame\\OlmerovaIlkoGame.csproj",
       "projectName": "OlmerovaIlkoGame",
-      "projectPath": "C:\\Users\\betyo\\Source\\Repos\\OlmerovaIlkoGame\\OlmerovaIlkoGame\\OlmerovaIlkoGame.csproj",
-      "packagesPath": "C:\\Users\\betyo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\betyo\\Source\\Repos\\OlmerovaIlkoGame\\OlmerovaIlkoGame\\obj\\",
+      "projectPath": "C:\\Users\\olmerova\\Source\\Repos\\OlmerovaIlkoGame\\OlmerovaIlkoGame\\OlmerovaIlkoGame.csproj",
+      "packagesPath": "C:\\Users\\olmerova\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\olmerova\\Source\\Repos\\OlmerovaIlkoGame\\OlmerovaIlkoGame\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\betyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\olmerova\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -73,7 +73,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -119,7 +118,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
